@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>услуги</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uslugi</h1>
+    </header>
+    <hr color="black">
+    <main>
+        <h2>Zajavka na tech.osmotr</h2>
+        <form>
+            <fieldset>
+                <legend>Pozalujsta, opisite svoj avtomobil</legend>
+                Marka avtomobilja <input type="text" name="trademark" placeholder="Vvedite marku avtomobilja">
+                <br>
+                <br>
+                model <input type="text" name="model" placeholder="Vvedite model avtomobilja" required="required">
+
+                <p>Korovka peredach</p>
+                MKP <input type="radio" name="gear" value="hand" checked>
+                AKP <input type="radio" name="gear" value="auto">
+                <br>
+                <br>
+                Neobhodimo proverit
+                <br>
+                <input type="checkbox" name="type1" value="brake">Tormoza<br>
+                <input type="checkbox" name="type2" value="brayttyke">Tormoza<br>
+                <input type="checkbox" name="type3" value="bratuytke">Tormoza<br>
+                <input type="checkbox" name="type4" value="be">Tormoza<br>
+                <input type="checkbox" name="type5" value="brgjgfjake">Tormoza<br>
+                <br>
+                Kakoe maslo?
+                <br>
+                <select name="oillist">
+                    <option label=""></option>
+                    <option label="motul">Motul</option>
+                    <option label="Shell">Shell</option>
+                    <option label="Rosneft">Rosneft</option>
+                    <option label="GAZ" disabled>GAZPROM</option>
+                </select>
+                <br>
+                <br>
+                Cvet pod kraski suppertov<br>
+                <input type="color" list="colorlist" value="cc0000">
+                <datalist id="colorlist">
+                    <option value="#ff0000" label="red"></option>
+                    <option value="#080000" label="green"></option>
+                    <option value="#0000ff" label="blue"></option>
+                    <option value="#ffffff" label="white"></option>
+                    <option value="#cccccc" label="grey"></option>
+                </datalist>
+                <br>
+                <br>
+                Data vizita<br>
+                <input type="date" name="visit">
+                <br>
+                <br>
+                Data vizita (osobyje dni)<br>
+                <input type="date" name="visit" min="2020-10-10" max="2020-10-18">
+                <br>
+                <br>
+                Vasa pocta<br>
+                <input type="email">
+                <br>
+                <br>
+                Vas mobilnyj telefon<br>
+                <input type="tel">
+                <br>
+                <br>
+                <input type="submit">
+                <input type="reset">
+                <p>tekst na knopkah mozno pomenjat cerez value, to est value i v skobkah naprimer -soglasen-</p>
+            </fieldset>
+            <p>Progress teh. osmotra</p>
+            <progress value="30" max="100"></progress>
+            <fieldset>
+                <legend>Obratnaja svjaz</legend>
+                Ocenite kacestvo uslug<br>
+                <input type="range" min="0" max="10" step="1" value="7">
+                <br>
+                <br>
+                Ctoby vam hotelos u nas uluzsit<br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Napisite svoi zelanija."></textarea>
+                <br>
+                <br>
+                Porekommendujete nas servis?<br>
+                <label for="yes">Da</label>
+                <input type="radio" id="yes" name="choise" value="yes" checked>
+                <label for="no">Net</label>
+                <input type="radio" id="no" name="choise" value="no">
+            </fieldset>
+        </form>
+    </main>
+    <hr color="black">
+    <footer>
+        <p>skillfactory</p>
+    </footer>
+</body>
+
+</html>
